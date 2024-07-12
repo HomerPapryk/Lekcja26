@@ -1,0 +1,39 @@
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  margin: 0;
+  background-color: #f0f0f0;
+}
+
+.square-box {
+  width: 50%;
+  padding-top: 50%; /* Trick for creating a square div based on width */
+  position: relative;
+  background-color: lightblue;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.square-box > * {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: block;
+}
+
+h1 {
+  margin-top: -2em; /* Adjust the top margin for better vertical alignment */
+}
+
+h2 {
+  margin-top: 1em; /* Adjust the top margin for better vertical alignment */
+}
+
+p {
+  margin-top: 4em; /* Adjust the top margin for better vertical alignment */
+}
